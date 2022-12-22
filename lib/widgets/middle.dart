@@ -11,7 +11,7 @@ class MiddleScreen extends StatelessWidget {
       child: Flex(
         direction: context.isMobile ? Axis.vertical : Axis.horizontal,
         children: [
-          "Todos mis trabajos creativos.\n"
+          "TMis trabajos creativos.\n"
               .richText
               .withTextSpanChildren(
                 ["Selecciona Proyectos.".textSpan.yellow400.make()],
