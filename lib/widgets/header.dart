@@ -49,7 +49,7 @@ class HeaderScreen extends StatelessWidget {
                 large: const IntroductionWidget()
                     .pOnly(left: 120)
                     .h(context.percentHeight * 60),
-              ))
+              )),
             ],
           ).w(context.screenWidth)
         ]),
@@ -150,8 +150,21 @@ class IntroductionWidget extends StatelessWidget {
                     : context.percentWidth * 40,
               ),
           20.heightBox,
-        ].vStack()
+        ].vStack(),
+        ElevatedButton(
+          onPressed: () {},
+          style: ButtonStyle(
+              shape: MaterialStateProperty.all(
+                const StadiumBorder(),
+              ),
+              backgroundColor: MaterialStateProperty.all(
+                Coolors.accentColor,
+              )),
+          child: "Visitame aqui:".text.make(),
+        ).h(50),
+        30.heightBox
       ],
+      alignment: MainAxisAlignment.spaceEvenly,
     );
   }
 }
